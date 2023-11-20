@@ -1,0 +1,47 @@
+/* * {
+    border: 1px solid purple;
+} */
+
+body {
+    background-color: lightblue;
+    margin: 0;
+}
+
+/* settings */
+.settings-container {
+    margin-top: 0.8em;
+}
+
+/* character select grid */
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 152px);
+    justify-content: center;
+    padding: 0.5em 1em;
+    background-color: black;
+}
+
+.char-grid-item:nth-last-child(3) {
+    grid-column-end: 3;
+}
+
+.char-grid-item:nth-last-child(2) {
+    grid-column-end: 4;
+}
+
+.char-grid-item:last-child {
+    grid-column-end: 5;
+}
+
+/* player select */
+.player-select-cont {
+    display: grid;
+    grid-template-columns: repeat(4, 24.6%);
+    gap: 0.5em;
+    margin: 1em 1.5em;
+}
+
+.player-card {
+    background-color: black;
+    height: 6.5em;
+}
