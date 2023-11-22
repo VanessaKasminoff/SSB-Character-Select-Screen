@@ -3,35 +3,65 @@
 } */
 
 body {
-    background-color: lightblue;
+    background-color: rgb(205 211 210);
     margin: 0;
+    height: 100vh;
 }
 
 /* settings */
 .settings-container {
     margin-top: 0.8em;
+    border-radius: 30px 0 0 0;
+    height: 6.5em;
+    width: 85%;
+    margin-left: 14.9%;
+    background-color: rgb(14, 14, 14);
+}
+
+.settings-container button {
+    height: 70%;
+    width: 15%;
+    background-color: red;
+    color: white;
+    font-size: 2.5em;
+    border: 0;
+    border-radius: 50px 0 0 50px;
+    margin-left: 1em;
+    margin-top: 0.2em;
+    padding-left: 1.5em;
 }
 
 /* character select grid */
 .character-grid {
     display: grid;
-    grid-template-columns: repeat(5, 152px);
+    grid-template-columns: repeat(8, 202px);
     justify-content: center;
     padding: 0.5em 1em;
-    background-color: black;
+    background-color: rgb(14, 14, 14);
 }
 
-.char-grid-item:nth-last-child(3) {
-    grid-column-end: 3;
+.char-grid-item {
+    height: 225px;
 }
 
-.char-grid-item:nth-last-child(2) {
-    grid-column-end: 4;
+.char-grid-item p {
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-family: 'Passion One', sans-serif;
+    font-size: 1.7em;
+    position: relative;
+    top: -14px;
+    text-shadow: 3px 3px 3px black;
 }
 
-.char-grid-item:last-child {
+/* .char-grid-item:nth-last-child(2) {
     grid-column-end: 5;
-}
+} */
+
+/* .char-grid-item:last-child {
+    grid-column-end: 6;
+} */
 
 /* player select */
 .player-select-cont {
@@ -39,9 +69,11 @@ body {
     grid-template-columns: repeat(4, 24.6%);
     gap: 0.5em;
     margin: 1em 1.5em;
+    height: 40%;
 }
 
 .player-card {
-    background-color: black;
-    height: 6.5em;
+    background-color: rgb(14, 14, 14);
+    height: 100%;
+    border-radius: 150px 0 0 0;
 }
